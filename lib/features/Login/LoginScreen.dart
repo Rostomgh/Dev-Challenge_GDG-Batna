@@ -3,11 +3,12 @@ import 'package:dev_challenge/core/Theme/AppSizes.dart';
 import 'package:dev_challenge/core/helper/Regex.dart';
 import 'package:dev_challenge/features/Login/Widget/CustomButton.dart';
 import 'package:dev_challenge/features/Login/Widget/CustomInput.dart';
+import 'package:dev_challenge/features/Login/Widget/CustomTextSpaN.dart';
 import 'package:dev_challenge/features/Login/Widget/StackAssets.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
-  LoginScreen({super.key});
+  const LoginScreen({super.key});
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
@@ -26,7 +27,9 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.end,
           children: [
+            
             const StackAssets(),
             const SizedBox(
               height: AppSizes.between,
@@ -66,11 +69,17 @@ class _LoginScreenState extends State<LoginScreen> {
                 });
               },
             ),
+            const Padding(
+              padding: EdgeInsets.all(10.0),
+              child: Text('Forget Password',style: TextStyle(color: AppColor.TextColor,fontSize: 16,fontWeight: FontWeight.w600),),
+            ),
             CustomButton(
               onpress: () {
               
               },
             ),
+            const SizedBox(height:AppSizes.heiB ),
+            const CustomTextRich()
           ],
         ),
       ),
