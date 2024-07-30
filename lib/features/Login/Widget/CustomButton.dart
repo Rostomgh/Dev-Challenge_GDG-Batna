@@ -11,7 +11,7 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(14.0),
+      padding: const EdgeInsets.all(14.0).w,
       child:  Container(
         height: AppSizes.heiB,
         width: AppSizes.widB,
@@ -20,9 +20,9 @@ class CustomButton extends StatelessWidget {
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(100.r).w),
           color: AppColor.primaryColor,
-          child: const Text(
+          child:  Text(
             'Login',
-            style: TextStyle(color: Colors.white, fontSize: 20),
+            style: TextStyle(color: Colors.white, fontSize: 20.sp),
           ),
         ),
       ),

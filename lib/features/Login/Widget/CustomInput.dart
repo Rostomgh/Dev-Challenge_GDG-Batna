@@ -22,7 +22,7 @@ class CustomInput extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding:  EdgeInsets.all(8.0).w,
       child: TextFormField(
         obscureText: obc,
         controller: controller,
@@ -41,18 +41,18 @@ class CustomInput extends StatelessWidget {
             ),
           ),
           labelText: label,
-          labelStyle: const TextStyle(
+          labelStyle:  TextStyle(
             color: AppColor.TextColor,
-            fontSize: 17,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w400,
           ),
           hintText: hint,
-          hintStyle: const TextStyle(
+          hintStyle:  TextStyle(
             color: AppColor.hintColor,
-            fontSize: 16,
+            fontSize: 16.sp,
           ),
           contentPadding:
-              const EdgeInsets.symmetric(horizontal: 20, vertical: 19),
+               const EdgeInsets.symmetric(horizontal: 20, vertical: 19).w,
         ),
       ),
     );
