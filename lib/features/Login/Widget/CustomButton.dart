@@ -3,6 +3,7 @@ import 'package:dev_challenge/core/Theme/AppSizes.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
+  
   final Function() onpress;
   const CustomButton({super.key, required this.onpress});
 

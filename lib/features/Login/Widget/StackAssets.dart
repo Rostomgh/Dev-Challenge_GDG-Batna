@@ -4,8 +4,8 @@ import 'package:dev_challenge/core/Theme/AppSizes.dart';
 import 'package:dev_challenge/features/Login/Widget/CustomContainer.dart';
 import 'package:flutter/material.dart';
 
-class StackAsste extends StatelessWidget {
-  const StackAsste({super.key});
+class StackAssets extends StatelessWidget {
+  const StackAssets({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +16,7 @@ class StackAsste extends StatelessWidget {
           fontFamily:  'LufgaExtraBold'),
           ),
         ),
+        Positioned(child: Image.asset(AppAssets.Lamp),left: 284,top: 0,right: 0,),
         Positioned(
           top: 190,
           left:45 ,
