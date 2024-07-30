@@ -4,7 +4,7 @@ class AppSizes {
   static const double WidthC = 393;
   static const double RedC = 40;
   static const double widB = 361;
-  static const double heiB = 65;
+  static const double heiB = 66;
   static const double messure = 350;
   static const double between = 50;
   static const double betweenInput = 17;
