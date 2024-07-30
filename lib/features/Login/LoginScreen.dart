@@ -39,7 +39,7 @@ class _LoginScreenState extends State<LoginScreen> {
               clr: emailBorderColor,
               onChanged: (val) {
                 setState(() {
-                  isEmailValid = val.isNotEmpty && AppRegex.isemail(val);
+                  isEmailValid = val.isNotEmpty && AppRegex.isemail(emailController.text);
                   emailBorderColor = isEmailValid ? AppColor.green : AppColor.red;
                   if (val.isEmpty) {
                     emailBorderColor = AppColor.hintColor;
@@ -58,7 +58,7 @@ class _LoginScreenState extends State<LoginScreen> {
               clr: passwordBorderColor,
               onChanged: (val) {
                 setState(() {
-                  isPasswordValid = val.isNotEmpty && AppRegex.isPass(val);
+                  isPasswordValid = val.isNotEmpty && AppRegex.isPass(passwordController.text);
                   passwordBorderColor = isPasswordValid ? AppColor.green : AppColor.red;
                   if (val.isEmpty) {
                     passwordBorderColor = AppColor.hintColor;
@@ -68,7 +68,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             CustomButton(
               onpress: () {
-                // Your button press logic here
+              
               },
             ),
           ],

@@ -1,5 +1,6 @@
 import 'package:dev_challenge/core/Theme/AppColor.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomInput extends StatelessWidget {
   final Color? clr;
@@ -28,13 +29,13 @@ class CustomInput extends StatelessWidget {
         onChanged: onChanged,
         decoration: InputDecoration(
           enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(100),
+            borderRadius: BorderRadius.circular(100.r).w,
             borderSide: BorderSide(
               color: clr ?? AppColor.hintColor,
             ),
           ),
           focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(100),
+            borderRadius: BorderRadius.circular(100.r).w,
             borderSide: BorderSide(
               color: clr ?? AppColor.hintColor,
             ),
@@ -42,7 +43,7 @@ class CustomInput extends StatelessWidget {
           labelText: label,
           labelStyle: const TextStyle(
             color: AppColor.TextColor,
-            fontSize: 20,
+            fontSize: 17,
             fontWeight: FontWeight.w400,
           ),
           hintText: hint,
